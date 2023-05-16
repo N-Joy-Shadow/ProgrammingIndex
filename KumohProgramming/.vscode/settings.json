@@ -1,0 +1,24 @@
+{
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "obj": true,
+        "bin": true,
+        "bin/Debug/net7.0": true,
+        "Properties": true,
+        "KumohProgramming.csproj": true,
+        "KumohProgramming.csproj.user": true
+    },
+    "hide-files.files": [
+        "obj",
+        "bin",
+        "bin/Debug/net7.0",
+        "Properties",
+        "KumohProgramming.csproj",
+        "KumohProgramming.csproj.user"
+    ]
+}

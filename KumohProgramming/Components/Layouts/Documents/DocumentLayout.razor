@@ -1,0 +1,14 @@
+@layout KumohProgramming.Components.Layouts.MainLayout
+@using KumohProgramming.Components.Sidebar
+
+<div class="document-container">
+    <SideBar/>
+
+    @ChildContent
+</div>
+
+
+@code{
+    [Parameter]
+    public RenderFragment ChildContent {get;set;}
+}

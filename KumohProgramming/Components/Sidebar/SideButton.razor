@@ -1,12 +1,12 @@
 
-<button >
-
+<button class="button-container">
+    <p>@title</p>
 </button>
 
 
 @code{
+    
     [Parameter]
-    public string title {get;set;}
-    [Parameter]
-    public bool isClick {get;set;}
+    public string title {get;set;} = "자습서";
+
 }

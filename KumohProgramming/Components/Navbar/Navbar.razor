@@ -1,7 +1,29 @@
-<nav class="a">
-    @a
+<nav class="nav-container">
+    <a class="title-btn p-4 text-2xl" href="/">
+        <strong>자습서</strong>
+    </a>
+    <div class="list-container gap-4 p-4">
+        <div class="search-container">
+            <input type="text" @bind="inputValue" 
+            class="search-input"/>
+
+            
+            <button @onclick="test">
+                <img src="/images/search_icon.svg" 
+                width="32" height="32" class="search-icon">
+            </button>
+            
+            
+        </div>
+    
+    </div>
 </nav>
 
 @code {
-    public string a {get; set;} = "안녕하노";
+    public string? inputValue;
+
+    private async Task test(){
+        await Task.Delay(1000);
+        inputValue = "";
+    }
 }

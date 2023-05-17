@@ -10,16 +10,11 @@
     z-index: 1000;
 }
 
-    #blazor-error-ui .dismiss {
-        cursor: pointer;
-        position: absolute;
-        right: 3.5rem;
-        top: 0.5rem;
-    }
-
-main,body,html {
-    margin: 0;
-    padding: 0;
+#blazor-error-ui .dismiss {
+    cursor: pointer;
+    position: absolute;
+    right: 3.5rem;
+    top: 0.5rem;
 }
 
 .blazor-error-boundary {
@@ -28,6 +23,14 @@ main,body,html {
     color: white;
 }
 
-    .blazor-error-boundary::after {
-        content: "An error has occurred."
-    }
+.blazor-error-boundary::after {
+    content: "An error has occurred."
+
+}
+
+main,
+body,
+html {
+    margin: 0;
+    padding: 0;
+}

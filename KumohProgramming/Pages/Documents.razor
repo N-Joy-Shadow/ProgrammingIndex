@@ -1,18 +1,20 @@
 @using KumohProgramming.Components.Layouts.Documents
-@using KumohProgramming.Components.Layouts.Documents
+@using KumohProgramming.Components.Document
 
 @page "/document/{Genre}/{Index:int}"
 
-<div>
-    <DocumentLayout>
-        <div>hi</div>
-    </DocumentLayout>
-</div>
 
+<DocumentLayout>
+
+    <Document index="@Index" genre="@Genre"/>
+    
+</DocumentLayout>
 
 @code{
     [Parameter]
     public string Genre {get;set;}
     [Parameter]
     public int Index {get;set;}
+
+    
 }

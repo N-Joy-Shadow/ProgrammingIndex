@@ -1,0 +1,21 @@
+<div class="document-content-container">
+    <h1 class="document-title">@genre</h1>
+    <hr/>
+    <h2>
+        @subTitle
+    </h2>
+</div>
+
+
+
+
+
+@code{
+    [Parameter]
+    public int index {get;set;}
+    [Parameter]
+    public string genre {get;set;}    
+
+    public string subTitle {get;set;} = "타이틀";
+}
+

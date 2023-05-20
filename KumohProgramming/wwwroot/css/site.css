@@ -34,3 +34,7 @@ html {
     margin: 0;
     padding: 0;
 }
+
+main,html {
+    height: 100%;
+}

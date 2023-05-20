@@ -1,12 +1,13 @@
 
-<button class="button-container">
+<a class="button-container" href="@link">
     <p>@title</p>
-</button>
+</a>
 
 
 @code{
     
     [Parameter]
     public string title {get;set;} = "자습서";
-
+    [Parameter]
+    public string? link {get;set;}
 }

@@ -7,6 +7,8 @@
     <UserSecretsId>c830d78c-5aad-41d4-9c34-a7c3da7a9b9a</UserSecretsId>
   </PropertyGroup>
 
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'https' " />
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'http' " />
   <ItemGroup>
     <PackageReference Include="Markdig" Version="0.31.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />

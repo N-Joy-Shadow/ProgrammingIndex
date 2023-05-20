@@ -15,4 +15,10 @@
     <PackageReference Include="RestSharp" Version="110.2.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="Components\MainPage\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Components\MainPage\" />
+  </ItemGroup>
 </Project>

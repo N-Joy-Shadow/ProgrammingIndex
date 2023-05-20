@@ -1,0 +1,23 @@
+﻿
+<div class="genre-container" >
+    <a href="@_href">
+
+    <h1>@_title</h1>
+    <hr/>
+    <div class="display-content">
+        hi
+    </div>
+    </a>
+</div>
+
+
+
+@code {       
+
+    [Parameter]
+    public string _href { get; set; } = "/";
+    [Parameter]
+    public string _title { get; set; } = "umlang";
+
+}  
+

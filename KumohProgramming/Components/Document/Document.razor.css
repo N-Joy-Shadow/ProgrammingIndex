@@ -1,7 +1,12 @@
 .document-title {
     font-size: 3rem;
-    font-weight: bold;
+    font-weight: 600;
 }
 .document-content-container{
     width: 100%;
+    margin : 1.5rem;
+}
+.document-subtitle{
+    font-size :2rem;
+    font-weight:500;
 }

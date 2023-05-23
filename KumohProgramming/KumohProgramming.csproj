@@ -13,12 +13,17 @@
     <PackageReference Include="Markdig" Version="0.31.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="RestSharp" Version="110.2.0" />
+    <PackageReference Include="MongoDB.Driver" Version="2.19.1" />
   </ItemGroup>
 
   <ItemGroup>
     <None Remove="Components\MainPage\" />
+    <None Remove="Utils\" />
+    <None Remove="Utils\DB\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Components\MainPage\" />
+    <Folder Include="Utils\" />
+    <Folder Include="Utils\DB\" />
   </ItemGroup>
 </Project>

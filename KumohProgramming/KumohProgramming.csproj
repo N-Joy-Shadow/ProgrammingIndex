@@ -14,15 +14,23 @@
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="RestSharp" Version="110.2.0" />
     <PackageReference Include="MongoDB.Driver" Version="2.19.1" />
+    <PackageReference Include="MongoDB.Driver.Core" Version="2.19.1" />
+    <PackageReference Include="MongoDB.Bson" Version="2.19.1" />
   </ItemGroup>
 
   <ItemGroup>
     <None Remove="Components\MainPage\" />
     <None Remove="Utils\" />
     <None Remove="Utils\DB\" />
+    <None Remove="Model\" />
+    <None Remove="Model\DB\" />
+    <None Remove="API\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Components\MainPage\" />
     <Folder Include="Utils\DB\" />
+    <Folder Include="Model\" />
+    <Folder Include="Model\DB\" />
+    <Folder Include="API\" />
   </ItemGroup>
 </Project>

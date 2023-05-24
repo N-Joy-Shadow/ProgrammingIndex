@@ -1,18 +1,20 @@
 ﻿using System;
 using MongoDB;
 using MongoDB.Driver;
-
 namespace KumohProgramming.Utils.DB
 {
-	public class DatabaseConnector
-	{
-        DatabaseConnector Instance = new DatabaseConnector();
-		public DatabaseConnector()
-		{
+    public class DatabaseConnector
+    {
+        public MongoClient client;
+        public IMongoDatabase database;
+        public static DatabaseConnector Instance = new DatabaseConnector();
+
+        public DatabaseConnector()
+        {
             string connectionString = Env.Get["MongoDB_URI"];
 
-             var client = new MongoClient(connectionString);
-
+            this.client = new MongoClient(connectionString);
+            this.database = client.GetDatabase("learn_lang");
 
         }
     }
